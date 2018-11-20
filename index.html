@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
       <style>
     .mySlides {display:none;}
     </style>
@@ -19,7 +20,7 @@
 <div class="navbar-fixed grey lighten-4">
     <nav class="grey lighten-4 ">
       <div class="nav-wrapper grey lighten-4 topo">
-        <a href="#!" class="brand-logo"><img class="logo" src="images/logo.png"/></a>
+        <a href="#!" class="brand-logo"><img class="logo" src="images/logo.jpg"/></a>
         <ul class="right hide-on-med-and-down">
 
         </ul>
@@ -30,7 +31,7 @@
 
             <nav class="blue darken-4">
       <div class="nav-wrapper container">
-        <a href="#!" class="hide brand-logo right"><img class="logo" src="images/logo.png"/></a>
+        <a href="#!" class="hide brand-logo right"><img class="logo" src="images/logo.jpg"/></a>
         <a href="#" data-target="mobile-menu" class="sidenav-trigger grey-text text-lighten-5"><i class="material-icons">menu</i></a>
         <ul class="left hide-on-med-and-down">
           <li><a class="grey-text text-lighten-5" href="#"><i class="material-icons left">home</i>Home</a></li>
@@ -38,6 +39,13 @@
           <li><a class="grey-text text-lighten-5" href="#servicos"><i class="material-icons left">monetization_on</i>Serviços</a></li>
           <li><a class="grey-text text-lighten-5" href="#"><i class="material-icons left">cloud_download</i>Downloads</a></li>
           <li><a class="grey-text text-lighten-5" href="#contato"><i class="material-icons left">contact_mail</i>Contato</a></li>
+          <li class="right">
+            
+      <form name="Form1" action="http://www.google.com.br/search" method="get" target="_blank">
+        <i class="material-icons">search</i>
+          </li>
+          <li class="right"><input class="white-text text-white" name="search" placeholder="Pesquisar..." size="20" maxlength="190" /></li>
+        </form>
         </ul>
       </div>
     </nav>
@@ -51,7 +59,7 @@
   </ul>
 
       <div class="w3-display-container">
-      <div class="mySlides banner" style="background-image: url('https://www.w3schools.com/w3css/img_snowtops.jpg'); "></div>
+      <div class="mySlides banner" style="background-image: url('images/banner1.jpg'); "></div>
       <div class="mySlides banner" style="background-image: url('https://www.w3schools.com/w3css/img_mountains.jpg'); "></div>
       <div class="mySlides banner" style="background-image: url('https://www.w3schools.com/w3css/img_forest.jpg'); "></div>
 
@@ -70,13 +78,25 @@
             <h2 class="center light-blue-text"><i class=" large material-icons">info</i></h2>
             <h2 class="center">Sobre a Empresa</h2>
 
-            <p class="light meio"> 
-         A empresa MUNDO DA INFORMÁTICA vem atuando na área TI, fornecendo soluções de conectividade local e remota, implementação de internet / intranet / extranet, suporte técnico desenvolvimento de sistemas, Automação comercial, confecções de websites e venda de equipamentos integrados às soluções oferecidas.
-         Consciente da necessidade atual das organizações, que cada vez mais devem buscar a qualidade nos serviços prestados, o MUNDO DA INFORMÁTICA acredita que é fundamental a orientação total ao cliente, buscando um tratamento individualizado e de longo prazo.
-        O desenvolvimento tecnológico na área de informática vem ocorrendo de forma extremamente rápida e o impacto nas organizações vem causando uma verdadeira revolução na forma de fazer negócios. Os profissionais do MUNDO DA INFORMÁTICA estão sempre atentos as inovações, identificando tendências e avaliando a maturidade tecnológica de produtos, possibilitando assim soluções dos problemas e satisfação das necessidades dos clientes que utilizam a informática como ferramenta de produtividade e gerência de suas atividades.</p>
+            <div class="light meio">
+            <p> 
+         A empresa MUNDO DA INFORMÁTICA vem atuando na área TI, fornecendo soluções de conectividade local e remota, suporte técnico desenvolvimento de sistemas, Automação comercial, confecções de websites e venda de equipamentos integrados às soluções oferecidas.</p>
+         <a href="#vermais" id="vermaislink" class="vermaislink">Ver Mais [+]</a>
+         <div class="vermais">
+         <p>Consciente da necessidade atual das organizações, que cada vez mais devem buscar a qualidade nos serviços prestados, o MUNDO DA INFORMÁTICA acredita que é fundamental a orientação total ao cliente, buscando um tratamento individualizado e de longo prazo.<p>
+        <p>O desenvolvimento tecnológico na área de informática vem ocorrendo de forma extremamente rápida e o impacto nas organizações vem causando uma verdadeira revolução na forma de fazer negócios. Os profissionais do MUNDO DA INFORMÁTICA estão sempre atentos as inovações, identificando tendências e avaliando a maturidade tecnológica de produtos, possibilitando assim soluções dos problemas e satisfação das necessidades dos clientes que utilizam a informática como ferramenta de produtividade e gerência de suas atividades.</p>
+      </div>
+      </div>
           </div>
         </div>
 
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+      <script>
+        $('#vermaislink').on('click',function(){
+          $('.vermais').toggle('slow');
+        });
+        $("h1").css({"color":"pink","font-size":"42px"});
+      </script>
 
 
 
@@ -140,7 +160,7 @@
 
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="email@gmail.com" id="email" type="email" class="validate">
+          <input placeholder="exemplo@email.com" id="email" type="email" class="validate">
           <label for="email">Email</label>
         </div>
       </div>
@@ -177,12 +197,16 @@
       </div>
 
 
+<div class="circulo fixo">
+          <div class="sobe"><a href="#"><i class="material-icons dark-blue-text center medium">keyboard_arrow_up</i></a></div>
+        </div>
+
 <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Facebook</h5>
+                <div class="fb-like-box" data-href="http://www.facebook.com/MundoDaInformatica" data-width="292" data-show-faces="true" data-stream="false" data-header="false"></div>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
@@ -197,8 +221,8 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2018 Copyright Mundo da Informática
+            <a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
             </div>
           </div>
         </footer>
