@@ -18,6 +18,24 @@
     </head>
 
     <body>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.newsletter').fadeIn();
+
+            } else {
+                $('.newsletter').fadeOut();
+            }
+        });
+    });
+</script>
+<div class="newsletter" style="display: none">
+  <div class="sobe"><a href="#"><i class="material-icons dark-blue-text center medium">keyboard_arrow_up</i></a></div>
+</div>
+
       <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -146,7 +164,7 @@
           </div>
       </div>
 
-<!-- Contato-->>
+<!-- Contato-->
   <div class="container">
     <div class="section">
 
@@ -207,9 +225,9 @@
       </div>
 
 
-<div class="circulo fixo">
+<!--<div class="circulo fixo">
           <div class="sobe"><a href="#"><i class="material-icons dark-blue-text center medium">keyboard_arrow_up</i></a></div>
-        </div>
+        </div>-->
 
 <footer class="page-footer">
           <div class="container">
